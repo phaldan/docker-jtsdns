@@ -1,0 +1,10 @@
+.git
+.gitignore
+LICENSE
+v*
+README.md
+Makefile
+docker-compose.yml
+JTSDNS.cfg
+log
+mysql

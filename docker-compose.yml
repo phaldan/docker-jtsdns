@@ -1,0 +1,23 @@
+version: "3"
+services:
+  jtsdns:
+    image: phaldan/jtsdns:1.5.2
+    ports:
+      - "41144:41144"
+    volumes:
+      - ./log:/JTSDNS/log
+    environment:
+      - JTSDNS_MYSQL_HOST=mysql
+      - JTSDNS_MYSQL_USER=root
+      - JTSDNS_MYSQL_PASSWORD=changeme
+      - JTSDNS_MYSQL_DATABASE=jtsdns
+      - JTSDNS_LOGFILE=%apphome%log/JTSDNS.log
+    links:
+      - mysql
+  mysql:
+    image: mariadb:10
+    environment:
+      - MYSQL_DATABASE=jtsdns
+      - MYSQL_ROOT_PASSWORD=changeme
+    volumes:
+      - ./mysql:/var/lib/mysql
