@@ -2,7 +2,9 @@
 
 [![](https://images.microbadger.com/badges/version/phaldan/jtsdns.svg)](https://microbadger.com/images/phaldan/jtsdns) [![](https://images.microbadger.com/badges/image/phaldan/jtsdns.svg)](https://microbadger.com/images/phaldan/jtsdns) [![](https://img.shields.io/docker/stars/phaldan/jtsdns.svg)](https://hub.docker.com/r/phaldan/jtsdns/) [![](https://img.shields.io/docker/pulls/phaldan/jtsdns.svg)](https://hub.docker.com/r/phaldan/jtsdns/) [![](https://img.shields.io/docker/automated/phaldan/jtsdns.svg)](https://hub.docker.com/r/phaldan/jtsdns/)
 
-Size optimised Docker image based on [openjdk:8-jre-alpine](https://hub.docker.com/_/openjdk/) image for the [JTSDNS](https://www.stefan1200.de/forum/index.php?topic=208.0) as an alternative TSDNS server with MySQL.
+Size optimised Docker image based on [openjdk:8-jre-alpine](https://hub.docker.com/_/openjdk/) image for the [JTSDNS](https://www.stefan1200.de/forum/index.php?topic=208.0) as an alternative TSDNS server with MySQL:
+
+* `1.5.2`, `1.5`, `1`, `latest` ([Dockerfile](https://github.com/phaldan/docker-jtsdns/blob/c5e8364d3afbe16519c5943cc31eda05a7d3b590/Dockerfile))
 
 ## Run JTSDNS container
 
