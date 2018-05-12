@@ -4,7 +4,8 @@
 
 Size optimised Docker image based on [openjdk:8-jre-alpine](https://hub.docker.com/_/openjdk/) image for the [JTSDNS](https://www.stefan1200.de/forum/index.php?topic=208.0) as an alternative TSDNS server with MySQL:
 
-* `1.5.2`, `1.5`, `1`, `latest` ([Dockerfile](https://github.com/phaldan/docker-jtsdns/blob/c5e8364d3afbe16519c5943cc31eda05a7d3b590/Dockerfile))
+* `1.6.0`, `1.6`, `1`, `latest` ([Dockerfile](https://github.com/phaldan/docker-jtsdns/blob/c609319fdd3a737fab42dc2eeada8076fcbaada2/Dockerfile))
+* `1.5.2`, `1.5` ([Dockerfile](https://github.com/phaldan/docker-jtsdns/blob/c5e8364d3afbe16519c5943cc31eda05a7d3b590/Dockerfile))
 
 ## Run JTSDNS container
 
@@ -18,7 +19,7 @@ Docker-Compose with MySQL:
 version: "3"
 services:
   jtsdns:
-    image: phaldan/jtsdns:1.5.2
+    image: phaldan/jtsdns
     ports:
       - "41144:41144"
     volumes:
