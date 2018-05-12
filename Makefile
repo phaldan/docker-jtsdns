@@ -4,6 +4,7 @@ IMAGE=phaldan/jtsdns
 CONTAINER=jtsdns
 DOCKER=$(shell which docker.io || which docker)
 MAKE=make -s
+VERSION?=1.6.0
 
 all: build
 

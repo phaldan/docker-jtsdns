@@ -11,7 +11,7 @@ RUN wget --no-verbose --retry-connrefused --read-timeout=10 --timeout=10 --tries
 FROM openjdk:8-jre-alpine
 MAINTAINER Philipp Daniels <philipp.daniels@gmail.com>
 
-ARG JTSDNS_VERSION
+ARG JTSDNS_VERSION=1.6.0
 ARG VCS_REF
 ARG BUILD_DATE
 
