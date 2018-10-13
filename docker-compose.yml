@@ -1,7 +1,7 @@
 version: "3"
 services:
   jtsdns:
-    image: phaldan/jtsdns:1.5.2
+    image: phaldan/jtsdns:1.6.0
     ports:
       - "41144:41144"
     volumes:
