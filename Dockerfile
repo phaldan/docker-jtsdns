@@ -1,4 +1,4 @@
-FROM alpine:3.6 as builder
+FROM alpine:3.6@sha256:cc24af836d1377e092ecb4e8f0a4324c3b1aa2b5295c2239edcc7bbc86a9cbc6 as builder
 ARG JTSDNS_VERSION
 WORKDIR /JTSDNS
 RUN apk add --no-cache unzip wget ca-certificates && \
@@ -8,7 +8,7 @@ RUN wget --no-verbose --retry-connrefused --read-timeout=10 --timeout=10 --tries
   unzip JTSDNS_${JTSDNS_VERSION}.zip -d / && \
   rm -R JTSDNS_${JTSDNS_VERSION}.zip MySQL_JConnector/ tools/ JTSDNS-Windows* readme.txt
 
-FROM openjdk:8-jre-alpine
+FROM openjdk:8-jre-alpine@sha256:e3168174d367db9928bb70e33b4750457092e61815d577e368f53efb29fea48b
 MAINTAINER Philipp Daniels <philipp.daniels@gmail.com>
 
 ARG JTSDNS_VERSION=1.6.0

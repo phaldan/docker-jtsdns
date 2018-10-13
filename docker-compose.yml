@@ -1,7 +1,7 @@
 version: "3"
 services:
   jtsdns:
-    image: phaldan/jtsdns:1.6.0
+    image: phaldan/jtsdns:1.6.0@sha256:16b90d1ba4bc5016e3c1f8dd402dee0ce61654efcb925c74b547613303844605
     ports:
       - "41144:41144"
     volumes:
@@ -15,7 +15,7 @@ services:
     links:
       - mysql
   mysql:
-    image: mariadb:10
+    image: mariadb:10@sha256:0d4bad4ea58ec976f3de2b5e16f4ed9513da58f21a2bb0df9fdd8422526dd5e5
     environment:
       - MYSQL_DATABASE=jtsdns
       - MYSQL_ROOT_PASSWORD=changeme
