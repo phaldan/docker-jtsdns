@@ -15,7 +15,7 @@ services:
     links:
       - mysql
   mysql:
-    image: mariadb:10.4.12@sha256:b3116f425f51353e2ba71b04647977b035c2c578d276e2d4285bd2798e8199ae
+    image: mariadb:10.4.12@sha256:62ceaa3606756ccc321941e69f9cbfe0458efed921354cbae10dfb3ca2df8b5b
     environment:
       - MYSQL_DATABASE=jtsdns
       - MYSQL_ROOT_PASSWORD=changeme
