@@ -8,7 +8,7 @@ RUN wget --no-verbose --retry-connrefused --read-timeout=10 --timeout=10 --tries
   unzip JTSDNS_${JTSDNS_VERSION}.zip -d / && \
   rm -R JTSDNS_${JTSDNS_VERSION}.zip MySQL_JConnector/ tools/ JTSDNS-Windows* readme.txt
 
-FROM openjdk:8u171-jre-alpine@sha256:8fce9c197de91e925595a74e159b82b589f70baf2e086f6e63a8b8c8e193a8ca
+FROM openjdk:8-jre-alpine@sha256:b2ad93b079b1495488cc01375de799c402d45086015a120c105ea00e1be0fd52
 MAINTAINER Philipp Daniels <philipp.daniels@gmail.com>
 
 ARG JTSDNS_VERSION=1.6.0
