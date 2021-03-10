@@ -1,4 +1,4 @@
-FROM alpine:3.11.6@sha256:39eda93d15866957feaee28f8fc5adb545276a64147445c64992ef69804dbf01 as builder
+FROM alpine:3.13.2@sha256:a75afd8b57e7f34e4dad8d65e2c7ba2e1975c795ce1ee22fa34f8cf46f96a3be as builder
 ARG JTSDNS_VERSION
 WORKDIR /JTSDNS
 RUN apk add --no-cache unzip wget ca-certificates && \
